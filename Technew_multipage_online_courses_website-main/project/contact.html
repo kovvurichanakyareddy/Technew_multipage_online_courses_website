@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technew</title>
+    <link rel="icon" type="image/x-icon" href="images/faviicon.ico.png">
+    <link rel="stylesheet" href="home.css">
+
+    <!--font awesome link  -->
+    <script src="https://kit.fontawesome.com/9eab89dd1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- header open -->
+<header class="header">
+    <a href="#" class="logo"><i class="fas fa-lightbulb"></i>Technew</a>
+    
+    <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+</header>
+
+<!-- contact form open -->
+<div class="account-form">
+    <div id="close-form" class="fas fa-times"></div>
+    <div class="buttons">
+        <div class="btn active login-btn">login</div>
+        <div class="btn register-btn">register</div>
+    </div>
+    <form class="login-form active" action="">
+        <h3>login now</h3>
+        <input type="email" placeholder="enter your email" class="box" id="logmail" required>
+        <input type="password" placeholder="enter your password" class="box" id="logpass" required>
+        <div class="flex">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">remember-me</label>
+            <a href="#" id="forgotpass">forgot-password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+    <form class="registration-form" action="">
+        <h3>register now</h3>
+        <input type="email" placeholder="Enter your E-mail" class="box" id="regmail" required>
+        <input type="text" placeholder="Enter your Name" class="box" id="regname" required>
+        <input type="number" class="box" placeholder="Enter your Mobile Number" id="regmobile" required>
+        <input type="text" class="box" placeholder="Enter your Country" id="regcountry" required>
+        <input type="password" placeholder="enter your password" class="box" id="regpass" required>
+        <input type="password" placeholder="confirm your password" class="box" id="confpass" required>
+        <input type="submit" value="register now" class="btn">
+    </form>
+
+    <form class="forgot-password-form" action="">
+        <h3>Reset Password</h3>
+        <input type="email" placeholder="Enter your E-mail" class="box" id="formail" required>
+        <input type="number" placeholder="Enter Mobile Number" class="box" id="formob" required>
+        <input type="password" placeholder="Enter your new password" class="box" id="forpass" required>
+        <input type="password" placeholder="Confirm your new password" class="box" id="conpass" required>
+        <input type="submit" value="change password" class="btn">
+    </form>
+
+    <div class="user-profile">
+        <p class="userlogo"><i class="fa-solid fa-user"></i></p>
+        <div class="gapp1"></div>
+        <p class="username">Hi, User</p>
+        <p class="usermail">user@email.com</p>
+        <div class="gapp2"></div>
+        <div class="buttons">
+            <div title="Edit account details" class="btn edit-btn"><i class="fa-solid fa-pen-to-square"></i></div>
+            <div title="Logout" class="btn logoutt-btn"><i class="fa-solid fa-right-from-bracket"></i></div>
+        </div>
+    </div>
+
+    <form class="edit-details-form" action="">
+        <h3>edit account details</h3>
+        <input type="text" class="box" placeholder="Enter your Name" id="editname" required>
+        <input type="number" class="box" placeholder="Enter your Mobile Number" id="editmobile" required>
+        <input type="text" class="box" placeholder="Enter your Country" id="editcountry" required>
+        <input type="submit" value="Save" class="btn">
+        <input type="button" value="Cancel" class="btn" onclick="cancelsend()">
+    </form>
+
+    <div class="popup" id="popupbox">
+        <h3 id="pophead">Hey Learner!</h3>
+        <p id="poppara">Welcome to the Technew</p>
+        
+        <button class="btn" id="closepopup">close</button>
+    </div>
+</div>
+
+<!-- contact form close -->
+
+<!-- header close -->
+
+
+<!-- contact form open -->
+<section class="heading-link">
+    <h3>contact us</h3>
+    <p><a href="home.html">home</a> / contact</p>
+</section>
+
+
+<section class="contact">
+
+    <h1 class="heading">get in touch</h1>
+    <div class="icons-container">
+        <div class="icons">
+            <i class="fas fa-clock"></i>
+            <h3>opening hours</h3>
+            <p>00:07am to 00:06pm</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-phone"></i>
+            <h3>Phone</h3>
+            <p>123-456-789</p>
+            <p>111-223-352</p>
+        </div>
+
+        <div class="icons">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email:</h3>  
+            <p>+123-456-7890</p>
+            <p>+111-222-3333</p>
+        </div>
+
+        <div class="icons">
+            <i class="fas fa-map"></i>
+            <h3>Address</h3>
+            <p>mbai, india - 533223</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="image">
+            <img src="images/contact-1.svg">
+        </div>
+        <form action="">
+            <h3>send us a message</h3>
+            <input type="text" placeholder="name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="nuber" placeholder="phone" class="box">
+            <textarea name="" class="box" cols="30" rows="10" placeholder="message"></textarea>
+            <!-- <input type="submit" value="send message" class="btn" id="openpopup"> -->
+            <button class="btn" id="openpopup">send message</button>
+        </form>
+    </div>
+
+    <div class="popup" id="popupbox">
+        <h3>THANK YOU!</h3>
+        <p>message sent successfully</p>
+
+        <button class="btn" id="closepopup">close</button>
+    </div>
+</section>
+<!-- contact form close -->
+
+<!-- faq section open -->
+<section class="faq">
+    <h1 class="heading">frequently asked questions</h1>
+
+    <div class="accordion-container">
+        <div class="accordion active">
+            <div class="accordion-heading">
+                <h3>how to contact for help?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">Learning can happen in many contexts, both formal and 
+                informal – it’s not restricted to traditional classroom or teacher-led settings. 
+                We can learn by ourselves or in a group, at home or at work, online or face-to-face.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>how much feez for web development?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">Learning can happen in many contexts, both formal and 
+                informal – it’s not restricted to traditional classroom or teacher-led settings. 
+                We can learn by ourselves or in a group, at home or at work, online or face-to-face.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>what is the most popular course?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">Learning can happen in many contexts, both formal and 
+                informal – it’s not restricted to traditional classroom or teacher-led settings. 
+                We can learn by ourselves or in a group, at home or at work, online or face-to-face.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>can i choose my own tutor?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">Learning can happen in many contexts, both formal and 
+                informal – it’s not restricted to traditional classroom or teacher-led settings. 
+                We can learn by ourselves or in a group, at home or at work, online or face-to-face.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>what payment methods are available?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">Learning can happen in many contexts, both formal and 
+                informal – it’s not restricted to traditional classroom or teacher-led settings. 
+                We can learn by ourselves or in a group, at home or at work, online or face-to-face.</p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>can i have trail for one month?</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">Learning can happen in many contexts, both formal and 
+                informal – it’s not restricted to traditional classroom or teacher-led settings. 
+                We can learn by ourselves or in a group, at home or at work, online or face-to-face.</p>
+        </div>
+
+
+    </div>
+</section>
+<!-- faq close -->
+
+<!-- logo slider section starts -->
+<section class="logos">
+    <div class="logo-slider">
+        <img src="images/a-1.png">
+        <img src="images/a-3.png">
+        <img src="images/a-4.png">
+        <img src="images/a-1.png">
+        <img src="images/a-3.png">
+        <img src="images/a-4.png">
+        <img src="images/a-1.png">
+        <img src="images/a-1.png">
+        <img src="images/a-3.png">
+        <img src="images/a-4.png">
+        <img src="images/a-1.png">
+        <img src="images/a-3.png">
+        <img src="images/a-4.png">
+        <img src="images/a-1.png">
+        <img src="images/a-1.png">
+        <img src="images/a-3.png">
+        <img src="images/a-4.png">
+        <img src="images/a-1.png">
+        <img src="images/a-3.png">
+        <img src="images/a-4.png">
+        <img src="images/a-1.png">
+    </div>
+</section>
+<!-- logo slider section close -->
+
+
+<!-- footer open -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3><i class="fas fa-lightbulb"></i>Technew</h3>
+            <p>Learning a new technology can be a rewarding experience with Technew</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="home.html" class="link">Home</a>
+            <a href="about.html" class="link">About</a>
+            <a href="courses.html" class="link" >Courses</a>
+            <a href="contact.html" class="link">Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>useful links</h3>
+            <a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">Help center</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">ask questions</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">send feedback</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">terms of use</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">Send Request</a>
+        </div>
+
+        <div class="box">
+            <h3>Newletter</h3>
+            <p>Subscribe for latest updates</p>
+            <form>
+                <input type="email" placeholder="enter your email" class="email">
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+       
+
+    </div>
+    <div class="credit">created by <span>Team codeweb</span> | all rights reserved!</div>
+
+</section>
+<!-- footer close -->
+<script>
+    let popclose = document.getElementById('closepopup');
+    popclose.onclick= ()=>{
+        document.getElementById('popupbox').style.display="none";
+    }
+    function cancelsend() {
+        document.querySelector('.account-form .edit-details-form').classList.remove('active');
+        document.querySelector('.user-profile').style.display="block";
+    }
+    </script>
+    <!-- Importing axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+    <!-- js link -->
+    <script src="home.js"></script>
+
+
+    <script>
+
+        
+let accordion = document.querySelectorAll('.faq .accordion-container .accordion');
+accordion.forEach(acco => {
+    acco.onclick=() => {
+        accordion.forEach(dion => dion.classList.remove('active'));
+        acco.classList.toggle('active');
+    }
+   });
+   
+        var logobox = document.querySelector('.logo-slider');
+        logobox.addEventListener('wheel',(evt)=>{
+            evt.preventDefault();
+            logobox.scrollLeft += evt.deltaY;
+        });
+
+
+       
+    </script>
+
+
+</body>
+</html>

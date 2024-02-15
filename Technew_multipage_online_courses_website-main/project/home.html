@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technew</title>
+    <link rel="icon" type="image/x-icon" href="images/faviicon.ico.png">
+    <link rel="stylesheet" href="home.css">
+
+    <!--font awesome link  -->
+    <script src="https://kit.fontawesome.com/9eab89dd1b.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+
+
+</head>
+<body>
+<!-- header open -->
+<header class="header">
+    <a href="#" class="logo"><i class="fas fa-lightbulb"></i>Technew</a>
+    
+    <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+</header>
+
+<!-- contact form open -->
+<div class="account-form">
+    <div id="close-form" class="fas fa-times"></div>
+    <div class="buttons">
+        <div class="btn active login-btn">login</div>
+        <div class="btn register-btn">register</div>
+    </div>
+    <form class="login-form active" action="">
+        <h3>login now</h3>
+        <input type="email" placeholder="enter your email" class="box" id="logmail" required>
+        <input type="password" placeholder="enter your password" class="box" id="logpass" required>
+        <div class="flex">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">remember-me</label>
+            <a href="#" id="forgotpass">forgot-password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+    <form class="registration-form" action="">
+        <h3>register now</h3>
+        <input type="email" placeholder="Enter your E-mail" class="box" id="regmail" required>
+        <input type="text" placeholder="Enter your Name" class="box" id="regname" required>
+        <input type="number" class="box" placeholder="Enter your Mobile Number" id="regmobile" required>
+        <input type="text" class="box" placeholder="Enter your Country" id="regcountry" required>
+        <input type="password" placeholder="enter your password" class="box" id="regpass" required>
+        <input type="password" placeholder="confirm your password" class="box" id="confpass" required>
+        <input type="submit" value="register now" class="btn">
+    </form>
+
+    <form class="forgot-password-form" action="">
+        <h3>Reset Password</h3>
+        <input type="email" placeholder="Enter your E-mail" class="box" id="formail" required>
+        <input type="number" placeholder="Enter Mobile Number" class="box" id="formob" required>
+        <input type="password" placeholder="Enter your new password" class="box" id="forpass" required>
+        <input type="password" placeholder="Confirm your new password" class="box" id="conpass" required>
+        <input type="submit" value="change password" class="btn">
+    </form>
+
+    <div class="user-profile">
+        <p class="userlogo"><i class="fa-solid fa-user"></i></p>
+        <div class="gapp1"></div>
+        <p class="username">Hi, User</p>
+        <p class="usermail">user@email.com</p>
+        <div class="gapp2"></div>
+        <div class="buttons">
+            <div title="Edit account details" class="btn edit-btn"><i class="fa-solid fa-pen-to-square"></i></div>
+            <div title="Logout" class="btn logoutt-btn"><i class="fa-solid fa-right-from-bracket"></i></div>
+        </div>
+    </div>
+
+    <form class="edit-details-form" action="">
+        <h3>edit account details</h3>
+        <input type="text" class="box" placeholder="Enter your Name" id="editname" required>
+        <input type="number" class="box" placeholder="Enter your Mobile Number" id="editmobile" required>
+        <input type="text" class="box" placeholder="Enter your Country" id="editcountry" required>
+        <input type="submit" value="Save" class="btn">
+        <input type="button" value="Cancel" class="btn" onclick="cancelsend()">
+    </form>
+
+    <div class="popup" id="popupbox">
+        <h3 id="pophead">Hey Learner!</h3>
+        <p id="poppara">Welcome to the Technew</p>
+        
+        <button class="btn" id="closepopup">close</button>
+    </div>
+</div>
+
+<!-- contact form close -->
+
+<!-- header close -->
+
+
+
+<!-- homesection starts -->
+<!-- homesection starts -->
+ 
+<section class="home">
+
+    <div class="swiper home-slider">
+        <div class="swiper-wrapper">
+
+            <section class="swiper-slide slide" style="background: url(images/course-1.3.jpg) no-repeat;">
+                <div class="content">
+                    <h3>Learning through implementation</h3>
+                    <p> In today's fast-paced world, continuous learning and skill development are essential for personal and professional growth.</p>
+                    <a href="courses.html" class="btn">get Started</a>
+                    
+                </div>
+            </section>
+            <section class="swiper-slide slide" style="background: url(images/home-bg3.jpg) no-repeat;">
+               <div class="content">
+                <h3>The Best online courses offered</h3>
+                   <p> Technew offer a flexible and accessible way to acquire new knowledge and expertise, whether you're looking to advance your career, explore a new hobby.</p>
+                   <a href="courses.html" class="btn">get Started</a> 
+               </div>
+            </section>
+            
+            <section class="swiper-slide slide" style="background: url(images/home-bg1.jpg) no-repeat;">
+                <div class="content">
+                    <h3> Start your learning journey </h3>
+                    <p>Whether you're a student looking to supplement your education, a professional seeking to upskill, Technew is the best online platform to learn</p>
+                    <a href="courses.html" class="btn">get Started</a>
+
+                </div>
+            </section>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- home seciton ends -->
+
+<!-- subject  section starts -->
+
+<section class="subjects">
+<h1 class="heading"></h1>
+
+<div class="box-container">
+    <div class="box">
+        <img src="images/subject-icon-1.jpg" alt="">
+        <h3>Web Development</h3>
+        <p>12 modules</p>
+    </div>
+    <div class="box">
+        <img src="images/subject-icon-2.jpg" alt="">
+        <h3>Graphic Design</h3>
+        <p>12 modules</p>
+    </div>
+    <div class="box">
+        <img src="images/subject-icon-3.jpg" alt="">
+        <h3>Python </h3>
+        <p>12 modules</p>
+    </div>
+    <div class="box">
+        <img src="images/subject-icon-4.jpg" alt="">
+        <h3>App Development</h3>
+        <p>12 modules</p>
+    </div>
+    
+    <div class="box">
+        <img src="images/subject-icon-5.jpeg" alt="">
+        <h3>Ai & ML</h3>
+        <p>12 modules</p>
+    </div>
+</div>
+</section>
+
+<!-- subject  section end -->
+
+<!-- HOME COURSE  section START -->
+
+<section class="home-courses">
+<h1 class="heading"> Our popular Courses</h1>
+
+<div class="swiper home-courses-slider">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/course-1.1.jpg" alt="">
+                <h3>Web Development</h3>
+            </div>
+            <div class="content">
+                <h3>Web Development</h3>
+                <p>Build websites and webapps.</p>
+                <a href="https://www.udemy.com/course/the-complete-web-developer-course-2" target="_blank" class="btn">Read More</a>
+            </div>
+        </div>
+        
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/course-1.2.svg" alt="">
+                <h3>Data Science </h3>
+            </div>
+            <div class="content">
+                <h3>Data Science</h3>
+                <p>obtaining actionable insights from raw data.</p>
+                <a href="https://www.simplilearn.com/data-science-free-course-for-beginners-skillup"  target="_blank" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/course-1.3.jpg" alt="">
+                <h3>Artificial Intelligence</h3>
+            </div>
+            <div class="content">
+                <h3>Artificial Intelligence</h3>
+                <p>technology that enables machines to think  humans.</p>
+                <a href="https://www.udemy.com/course/deep-reinforcement-learning-in-python" target="_blank" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/course-1.4.svg" alt="">
+                <h3>Cyber Security</h3>
+            </div>
+            <div class="content">
+                <h3>Cyber Security</h3>
+                <p>Cybersecurity aims to protect individuals’  systems</p>
+                <a href="https://www.udemy.com/course/the-complete-internet-security-privacy-course-volume-1lass_._d" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/course-1.5.svg" alt="">
+                <h3>Data Mining</h3>
+            </div>
+            <div class="content">
+                <h3>Data Mining</h3>
+                <p>Learn Data Mining or improve your skills online today.</p>
+                <a href="https://www.udemy.com/course/datascience" target="_blank" class="btn">Read More</a>
+            </div>
+        </div>
+
+        <div class="swiper-slide slide">
+            <div class="image">
+                <img src="images/course-1.6.png" alt="">
+                <h3>Ui Desiging</h3>
+            </div>
+            <div class="content">
+                <h3>Ui Desiging</h3>
+                <p>Lorem in libero laboriosam repudiandae provident non at.</p>
+                <a href="https://www.upgrad.com/bootcamps/ui-ux-design-course?" target="_blank" class="btn">Read More</a>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+</section>
+
+ 
+<!-- home seciton ends -->
+
+
+
+<!-- footer open -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3><i class="fas fa-lightbulb"></i>Technew</h3>
+            <p>Learning a new technology can be a rewarding experience with Technew</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="home.html" class="link">Home</a>
+            <a href="about.html" class="link">About</a>
+            <a href="courses.html" class="link" >Courses</a>
+            <a href="contact.html" class="link">Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>useful links</h3>
+            <a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">Help center</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">ask questions</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">send feedback</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">terms of use</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">Send Request</a>
+        </div>
+
+        <div class="box">
+            <h3>Newletter</h3>
+            <p>Subscribe for latest updates</p>
+            <form>
+                <input type="email" placeholder="enter your email" class="email">
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+       
+
+    </div>
+    <div class="credit">created by <span>Team codeweb</span> | all rights reserved!</div>
+
+</section>
+<!-- footer close -->
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+
+   
+
+    <script>
+        var swiper = new Swiper(".home-slider", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable:true,
+    },
+    loop:true,
+    grabCursor:true,
+});
+
+// home course section swipper
+var swiper = new Swiper(".home-courses-slider", {
+    loop:true,
+    grabCursor:true,
+    spaceBetween: 20,
+    breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+
+        },
+        991: {
+          slidesPerView: 3,
+          
+        },
+      },
+});
+function cancelsend() {
+        document.querySelector('.account-form .edit-details-form').classList.remove('active');
+        document.querySelector('.user-profile').style.display="block";
+    }
+    </script>
+
+    <!-- popup window functions -->
+    <script>
+        // let popopen = document.getElementById('openpopup');
+        // popopen.onclick = (event)=>{
+        //     event.preventDefault();
+        //     document.getElementById('popupbox').style.display="block";
+        // }
+
+        let popclose = document.getElementById('closepopup');
+        popclose.onclick= ()=>{
+            document.getElementById('popupbox').style.display="none";
+        }
+    </script>
+    <!-- Importing axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+     <!-- js link -->
+     <script src="home.js"></script>
+</body>
+</html>

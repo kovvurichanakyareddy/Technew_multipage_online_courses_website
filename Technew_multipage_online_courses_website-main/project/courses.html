@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technew</title>
+    <link rel="icon" type="image/x-icon" href="images/faviicon.ico.png">
+
+    <link rel="stylesheet" href="home.css">
+
+    <!--font awesome link  -->
+    <script src="https://kit.fontawesome.com/9eab89dd1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- header open -->
+<header class="header">
+    <a href="#" class="logo"><i class="fas fa-lightbulb"></i>Technew</a>
+    
+    <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+</header>
+
+<!-- contact form open -->
+<div class="account-form">
+    <div id="close-form" class="fas fa-times"></div>
+    <div class="buttons">
+        <div class="btn active login-btn">login</div>
+        <div class="btn register-btn">register</div>
+    </div>
+    <form class="login-form active" action="">
+        <h3>login now</h3>
+        <input type="email" placeholder="enter your email" class="box" id="logmail" required>
+        <input type="password" placeholder="enter your password" class="box" id="logpass" required>
+        <div class="flex">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">remember-me</label>
+            <a href="#" id="forgotpass">forgot-password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+    <form class="registration-form" action="">
+        <h3>register now</h3>
+        <input type="email" placeholder="Enter your E-mail" class="box" id="regmail" required>
+        <input type="text" placeholder="Enter your Name" class="box" id="regname" required>
+        <input type="number" class="box" placeholder="Enter your Mobile Number" id="regmobile" required>
+        <input type="text" class="box" placeholder="Enter your Country" id="regcountry" required>
+        <input type="password" placeholder="enter your password" class="box" id="regpass" required>
+        <input type="password" placeholder="confirm your password" class="box" id="confpass" required>
+        <input type="submit" value="register now" class="btn">
+    </form>
+
+    <form class="forgot-password-form" action="">
+        <h3>Reset Password</h3>
+        <input type="email" placeholder="Enter your E-mail" class="box" id="formail" required>
+        <input type="number" placeholder="Enter Mobile Number" class="box" id="formob" required>
+        <input type="password" placeholder="Enter your new password" class="box" id="forpass" required>
+        <input type="password" placeholder="Confirm your new password" class="box" id="conpass" required>
+        <input type="submit" value="change password" class="btn">
+    </form>
+
+    <div class="user-profile">
+        <p class="userlogo"><i class="fa-solid fa-user"></i></p>
+        <div class="gapp1"></div>
+        <p class="username">Hi, User</p>
+        <p class="usermail">user@email.com</p>
+        <div class="gapp2"></div>
+        <div class="buttons">
+            <div title="Edit account details" class="btn edit-btn"><i class="fa-solid fa-pen-to-square"></i></div>
+            <div title="Logout" class="btn logoutt-btn"><i class="fa-solid fa-right-from-bracket"></i></div>
+        </div>
+    </div>
+
+    <form class="edit-details-form" action="">
+        <h3>edit account details</h3>
+        <input type="text" class="box" placeholder="Enter your Name" id="editname" required>
+        <input type="number" class="box" placeholder="Enter your Mobile Number" id="editmobile" required>
+        <input type="text" class="box" placeholder="Enter your Country" id="editcountry" required>
+        <input type="submit" value="Save" class="btn">
+        <input type="button" value="Cancel" class="btn" onclick="cancelsend()">
+    </form>
+
+    <div class="popup" id="popupbox">
+        <h3 id="pophead">Hey Learner!</h3>
+        <p id="poppara">Welcome to the Technew</p>
+        
+        <button class="btn" id="closepopup">close</button>
+    </div>
+</div>
+
+<!-- contact form close -->
+
+<!-- header close -->
+
+<section class="heading-link">
+    <h3>our courses</h3>
+    <p><a href="home.html">home</a> / courses</p>
+</section>
+
+<section class="courses">
+    <h1 class="heading">our famous courses</h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <div class="image">
+             <img src="images/course-5.jpg">
+             <h3>computer science</h3>
+            </div>
+            <div class="content">
+                 <h3>choose what's best for you!</h3>
+                 <p>computer science  deals with the  development computer systems, </p>
+                 <a href="https://takelessons.com/" class="btn"> read more</a>
+                 <div class="icons">
+                     <span><i class="fas fa-book"></i>12 modules</span>
+                     <span><i class="fas fa-clock"></i>6 hours</span>
+                 </div>
+             </div>
+         </div>
+
+         <div class="box">
+            <div class="image">
+             <img src="images/course-6.jpg">
+             <h3>electronics</h3>
+            </div>
+            <div class="content">
+                 <h3>choose what's best for you!</h3>
+                 <p>Electrical and Computer Engineering (ECE) is the  Bridging Hardware and Software</p>
+                 <a href="https://www.careers360.com/" class="btn"> read more</a>
+                 <div class="icons">
+                     <span><i class="fas fa-book"></i>12 modules</span>
+                     <span><i class="fas fa-clock"></i>6 hours</span>
+                 </div>
+             </div>
+         </div>
+        <div class="box">
+           <div class="image">
+            <img src="images/course-1.jpg">
+            <h3>mechanics</h3>
+           </div>
+           <div class="content">
+                <h3>choose what's best for you!</h3>
+                <p>Mechanical engineering is at the heart of innovation and technology</p>
+                <a href="https://www.careers360.com/" class="btn"> read more</a>
+                <div class="icons">
+                    <span><i class="fas fa-book"></i>12 modules</span>
+                    <span><i class="fas fa-clock"></i>6 hours</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="image">
+             <img src="images/course-2.jpg">
+             <h3>agriculture science</h3>
+            </div>
+            <div class="content">
+                 <h3>choose what's best for you!</h3>
+                 <p>Agricultural science is essential for ensuring a stable and sustainable food supply </p>
+                 <a href="https://www.careers360.com/" class="btn"> read more</a>
+                 <div class="icons">
+                     <span><i class="fas fa-book"></i>12 modules</span>
+                     <span><i class="fas fa-clock"></i>6 hours</span>
+                 </div>
+             </div>
+         </div>
+
+
+         <div class="box">
+            <div class="image">
+             <img src="images/course-3.jpg">
+             <h3>artificial inteligence</h3>
+            </div>
+            <div class="content">
+                 <h3>choose what's best for you!</h3>
+                 <p>It encompasses a wide range of topics in modern technology-driven society</p>
+                 <a href="https://www.careers360.com/" class="btn"> read more</a>
+                 <div class="icons">
+                     <span><i class="fas fa-book"></i>12 modules</span>
+                     <span><i class="fas fa-clock"></i>6 hours</span>
+                 </div>
+             </div>
+         </div>
+
+         <div class="box">
+            <div class="image">
+             <img src="images/course-4.jpg">
+             <h3>petroleum</h3>
+            </div>
+            <div class="content">
+                 <h3>choose what's best for you!</h3>
+                 <p>Petroleum engineering is a specialized field of engineering that focuses on the exploration</p>
+                 <a href="https://www.careers360.com/" class="btn"> read more</a>
+                 <div class="icons">
+                     <span><i class="fas fa-book"></i>12 modules</span>
+                     <span><i class="fas fa-clock"></i>6 hours</span>
+                 </div>
+             </div>
+         </div>
+
+         
+
+         <div class="box hide">
+            <div class="image">
+             <img src="images/course-7.png">
+             <h3>civil Engineering</h3>
+            </div>
+            <div class="content">
+                 <h3>choose what's best for you!</h3>
+                 <p>Lorem ipsum, dolor sit amet consecutor adipisicing elit. Eaque, odit!</p>
+                 <a href="https://www.careers360.com/" class="btn"> read more</a>
+                 <div class="icons">
+                     <span><i class="fas fa-book"></i>12 modules</span>
+                     <span><i class="fas fa-clock"></i>6 hours</span>
+                 </div>
+             </div>
+         </div>
+
+         <div class="box hide">
+            <div class="image">
+             <img src="images/course-8.jpg">
+             <h3>business management</h3>
+            </div>
+            <div class="content">
+                 <h3>choose what's best for you!</h3>
+                 <p>Lorem ipsum, dolor sit amet consecutor adipisicing elit. Eaque, odit!</p>
+                 <a href="https://www.careers360.com/" class="btn"> read more</a>
+                 <div class="icons">
+                     <span><i class="fas fa-book"></i>12 modules</span>
+                     <span><i class="fas fa-clock"></i>6 hours</span>
+                 </div>
+             </div>
+         </div>
+
+         <div class="box hide">
+            <div class="image">
+             <img src="images/course-9.jpg">
+             <h3>electrical Engineering</h3>
+            </div>
+            <div class="content">
+                 <h3>choose what's best for you!</h3>
+                 <p>Lorem ipsum, dolor sit amet consecutor adipisicing elit. Eaque, odit!</p>
+                 <a href="https://www.careers360.com/" class="btn"> read more</a>
+                 <div class="icons">
+                     <span><i class="fas fa-book"></i>12 modules</span>
+                     <span><i class="fas fa-clock"></i>6 hours</span>
+                 </div>
+             </div>
+         </div>
+    </div>
+
+    <div class="load-more">
+        <div class="btn">load more</div>
+     </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- footer open -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3><i class="fas fa-lightbulb"></i>Technew</h3>
+            <p>Learning a new technology can be a rewarding experience with Technew</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="home.html" class="link">Home</a>
+            <a href="about.html" class="link">About</a>
+            <a href="courses.html" class="link" >Courses</a>
+            <a href="contact.html" class="link">Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>useful links</h3>
+            <a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">Help center</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">ask questions</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">send feedback</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">terms of use</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">Send Request</a>
+        </div>
+
+        <div class="box">
+            <h3>Newletter</h3>
+            <p>Subscribe for latest updates</p>
+            <form>
+                <input type="email" placeholder="enter your email" class="email">
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+       
+
+    </div>
+    <div class="credit">created by <span>Team codeweb</span> | all rights reserved!</div>
+
+</section>
+<!-- footer close -->
+
+<!-- js code- when clicking  on the button hided courses are displayed -->
+<script>
+     document.querySelector('.load-more .btn').onclick = () => {
+        document.querySelectorAll('.courses .box-container .hide').forEach(show =>{
+            show.style.display = 'block';
+        });
+        document.querySelector('.load-more .btn').style.display = "none";
+    }
+    function cancelsend() {
+        document.querySelector('.account-form .edit-details-form').classList.remove('active');
+        document.querySelector('.user-profile').style.display="block";
+    }
+</script>
+
+<script>
+    // let popopen = document.getElementById('openpopup');
+    // popopen.onclick = (event)=>{
+    //     event.preventDefault();
+    //     document.getElementById('popupbox').style.display="block";
+    // }
+
+    let popclose = document.getElementById('closepopup');
+    popclose.onclick= ()=>{
+        document.getElementById('popupbox').style.display="none";
+    }
+    </script>
+    <!-- Importing axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+    <!-- js link -->
+    <script src="home.js"></script>
+</body>
+</html>

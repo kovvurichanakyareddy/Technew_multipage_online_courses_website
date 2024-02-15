@@ -1,0 +1,436 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technew</title>
+    <link rel="icon" type="image/x-icon" href="images/faviicon.ico.png">
+    <link rel="stylesheet" href="home.css">
+
+    <!--font awesome link  -->
+    <script src="https://kit.fontawesome.com/9eab89dd1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- header open -->
+<header class="header">
+    <a href="#" class="logo"><i class="fas fa-lightbulb"></i>Technew</a>
+    
+    <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+        <a href="home.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="courses.html">Courses</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="icons">
+        <div id="account-btn" class="fas fa-user"></div>
+        <div id="menu-btn" class="fas fa-bars"></div>
+    </div>
+</header>
+
+<!-- contact form open -->
+<div class="account-form">
+    <div id="close-form" class="fas fa-times"></div>
+    <div class="buttons">
+        <div class="btn active login-btn">login</div>
+        <div class="btn register-btn">register</div>
+    </div>
+    <form class="login-form active" action="">
+        <h3>login now</h3>
+        <input type="email" placeholder="enter your email" class="box" id="logmail" required>
+        <input type="password" placeholder="enter your password" class="box" id="logpass" required>
+        <div class="flex">
+            <input type="checkbox" id="remember-me">
+            <label for="remember-me">remember-me</label>
+            <a href="#" id="forgotpass">forgot-password?</a>
+        </div>
+        <input type="submit" value="login now" class="btn">
+    </form>
+
+    <form class="registration-form" action="">
+        <h3>register now</h3>
+        <input type="email" placeholder="Enter your E-mail" class="box" id="regmail" required>
+        <input type="text" placeholder="Enter your Name" class="box" id="regname" required>
+        <input type="number" class="box" placeholder="Enter your Mobile Number" id="regmobile" required>
+        <input type="text" class="box" placeholder="Enter your Country" id="regcountry" required>
+        <input type="password" placeholder="enter your password" class="box" id="regpass" required>
+        <input type="password" placeholder="confirm your password" class="box" id="confpass" required>
+        <input type="submit" value="register now" class="btn">
+    </form>
+
+    <form class="forgot-password-form" action="">
+        <h3>Reset Password</h3>
+        <input type="email" placeholder="Enter your E-mail" class="box" id="formail" required>
+        <input type="number" placeholder="Enter Mobile Number" class="box" id="formob" required>
+        <input type="password" placeholder="Enter your new password" class="box" id="forpass" required>
+        <input type="password" placeholder="Confirm your new password" class="box" id="conpass" required>
+        <input type="submit" value="change password" class="btn">
+    </form>
+
+    <div class="user-profile">
+        <p class="userlogo"><i class="fa-solid fa-user"></i></p>
+        <div class="gapp1"></div>
+        <p class="username">Hi, User</p>
+        <p class="usermail">user@email.com</p>
+        <div class="gapp2"></div>
+        <div class="buttons">
+            <div title="Edit account details" class="btn edit-btn"><i class="fa-solid fa-pen-to-square"></i></div>
+            <div title="Logout" class="btn logoutt-btn"><i class="fa-solid fa-right-from-bracket"></i></div>
+        </div>
+    </div>
+
+    <form class="edit-details-form" action="">
+        <h3>edit account details</h3>
+        <input type="text" class="box" placeholder="Enter your Name" id="editname" required>
+        <input type="number" class="box" placeholder="Enter your Mobile Number" id="editmobile" required>
+        <input type="text" class="box" placeholder="Enter your Country" id="editcountry" required>
+        <input type="submit" value="Save" class="btn">
+        <input type="button" value="Cancel" class="btn" onclick="cancelsend()">
+    </form>
+
+    <div class="popup" id="popupbox">
+        <h3 id="pophead">Hey Learner!</h3>
+        <p id="poppara">Welcome to the Technew</p>
+        
+        <button class="btn" id="closepopup">close</button>
+    </div>
+</div>
+
+<!-- contact form close -->
+
+<!-- header close -->
+
+
+<!--  about intro section open-->
+<section class="heading-link">
+    <h3>about us</h3>
+    <p><a href="home.html">home</a> / about</p>
+
+</section>
+<section class="about">
+    <div class="image">
+        <img src="images/aboutintro.svg">
+    </div>
+    <div class="content">
+        <h3 class="about-title">We Provide Best Learning Experience</h3>
+        <p>Learning can happen in many contexts, both formal and 
+            informal – it’s not restricted to traditional classroom or teacher-led settings. 
+            We can learn by ourselves or in a group, at home or at work, online or face-to-face.</p>
+        <div class="icons-container">
+            <div class="icons">
+                <i class="fa-solid fa-book"></i>
+                <h3>350+</h3>
+			    <span>courses</span>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-user-graduate"></i>
+                <h3>1200+</h3>
+			    <span>students</span>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-medal"></i>
+                <h3>10+</h3>
+			    <span>awards</span>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<!-- about intro section close  -->
+
+
+<!--  teachers section starts-->
+
+
+   
+
+<section class="teacher">
+    <h1 class="heading">Our Expert Mentors</h1>
+<div class="gallery">
+    <div class="image">
+        <img src="images/teacher-1.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="images/teacher-2.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="images/teacher-3.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="images/teacher-4.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="images/teacher-1.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="images/teacher-3.png">
+        <div class="share">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="images/teacher-1.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="images/teacher-2.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+   
+    <div class="image">
+        <img src="images/teacher-4.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    <div class="image">
+        <img src="images/teacher-1.png">
+        <div class="share">
+            <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+    
+   
+</div>
+</section>
+<!-- teacher section close -->
+
+<!-- reviews section open -->
+<section class="reviews">
+    <h1 class="heading">our students review</h1>
+<div class="review-slider">
+    
+    <div class="review-slide">
+        <p>Quality of placements at bachelor's level is quite good. Around 80% of the students get placed. 
+            Rest of the students prefer higher studies and competitive exams and prefer to go abroad. They guide us and help us.
+            </p>
+        <img src="images/review-1.jpg">
+        <h3>john deo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+        </div>
+    </div>
+
+    <div class="review-slide">
+        <p>Speaking about academics, it is good and there are a lot of staff with more than 10 years 
+            of experience. There are a lot of ways to develop our skills 
+            and the Technew keeps its curriculum updated as per the new syllabus.
+            </p>
+        <img src="images/review-2.jpg">
+        <h3>john deo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="fa-regular fa-star"></i>
+            
+        </div>
+    </div>
+
+    <div class="review-slide">
+        <p>Technew infrastructure - the infrastructure is quite nice, wifi would be available 
+            in library and in all seminar halls. The college is very attractive and the place of 
+            living is clean and is also very hygiene.
+            </p>
+        <img src="images/review-3.jpg">
+        <h3>john deo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+    </div>
+
+    <div class="review-slide">
+        <p>Quality of placements at bachelor's level is quite good. Around 80% of the students get placed. 
+            Rest of the students prefer higher studies and competitive exams and prefer to go abroad. They guide us and help us.
+            </p>
+        <img src="images/review-4.jpg">
+        <h3>john deo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+    </div>
+
+    <div class="review-slide">
+        <p>With an autonomous status, the Technew designs a distinct curriculum for each batch, taking advantage 
+            of the experienced staff, all of whom have more than five years of experience.
+            </p>
+        <img src="images/review-2.jpg">
+        <h3>john deo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="fa-regular fa-star"></i>
+            
+        </div>
+    </div>
+
+    <div class="review-slide">
+        <p>The placements are really good in college. Many companies do come and visit our campus.
+             Now it is equal to many of the private colleges, but has good placements. The placement cell gives all the support needed.
+            </p>
+        <img src="images/review-5.jpg">
+        <h3>john deo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+    </div>
+
+    <div class="review-slide">
+        <p>Quality of placements at bachelor's level is quite good. Around 80% of the students get placed. 
+            Rest of the students prefer higher studies and competitive exams and prefer to go abroad. They guide us and help us.
+            </p>
+        <img src="images/review-3.jpg">
+        <h3>john deo</h3>
+        <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+            <i class="fa-regular fa-star"></i>
+            <i class="fa-regular fa-star"></i>
+           
+        </div>
+    </div>
+</div>
+</section>
+<!-- reviews section close -->
+
+
+<!-- footer open -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3><i class="fas fa-lightbulb"></i>Technew</h3>
+            <p>Learning a new technology can be a rewarding experience with Technew</p>
+            <div class="share">
+                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/login" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="home.html" class="link">Home</a>
+            <a href="about.html" class="link">About</a>
+            <a href="courses.html" class="link" >Courses</a>
+            <a href="contact.html" class="link">Contact</a>
+        </div>
+
+        <div class="box">
+            <h3>useful links</h3>
+            <a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">Help center</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">ask questions</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">send feedback</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">terms of use</a>
+			<a href="https://forms.gle/vS8SiE691P1GJQju5" target="_blank" class="link">Send Request</a>
+        </div>
+
+        <div class="box">
+            <h3>Newletter</h3>
+            <p>Subscribe for latest updates</p>
+            <form>
+                <input type="email" placeholder="enter your email" class="email">
+                <input type="submit" value="submit" class="btn">
+            </form>
+        </div>
+       
+
+    </div>
+    <div class="credit">created by <span>Team codeweb</span> | all rights reserved!</div>
+
+</section>
+<!-- footer close -->
+
+<script>
+    let popclose = document.getElementById('closepopup');
+    popclose.onclick= ()=>{
+        document.getElementById('popupbox').style.display="none";
+    }
+    function cancelsend() {
+        document.querySelector('.account-form .edit-details-form').classList.remove('active');
+        document.querySelector('.user-profile').style.display="block";
+    }
+    </script>
+    <!-- Importing axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.1/axios.min.js"></script>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- js link -->
+    <script src="home.js"></script>
+</body>
+</html>
